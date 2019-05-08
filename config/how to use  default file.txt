@@ -6,5 +6,7 @@
 
 {
   "mongoURI": "<Your MongoURI>",
-  "jwtSecret": "JWT-Secret>"
+  "jwtSecret": "JWT-Secret>",
+  "githubClientId": "<Your Github client id>",
+  "githubSecret": "<Your Github secret>"
 }

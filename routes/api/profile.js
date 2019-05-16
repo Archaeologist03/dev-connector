@@ -160,6 +160,7 @@ router.delete('/', auth, async (req, res) => {
 
     // Remove Profile
     await Profile.findOneAndRemove({ user: req.user.id });
+
     // Remove user
     await User.findOneAndRemove({ _id: req.user.id });
 
@@ -231,7 +232,7 @@ router.put(
 );
 
 // @route   DELETE api/profile/experience/:exp_id
-// @desc    Delete experiene from profile
+// @desc    Delete experience from profile
 // @access  Private
 router.delete('/experience/:exp_id', auth, async (req, res) => {
   try {
